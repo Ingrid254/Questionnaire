@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUESTIONNAIRE</title>
+
+  <!-- css file link-->
+   <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="container"></div>
+  <header class="header">
+    <h1 id="title">
+      How well do you know your Country
+    </h1>
+  </header>
+  <form action="" id="survey" class="form">
+    <div class = "question">
+      <p>1. What is the staple food in Kenya?</p>
+      <label><input type = "radio" name = "q1" value="A"> A)Rice </label>
+      <label><input type = "radio" name = "q1" value="B"> B)Ugali </label>
+      <label><input type = "radio" name = "q1" value="C"> C)Chapati </label>
+      <label><input type = "radio" name = "q1" value="D"> D)Beans </label>
+    </div>
+    <div class = "question">
+      <p>2. How many counties are there in Kenya?</p>
+      <label><input type = "radio" name = "q1" value="A"> A)30 </label>
+      <label><input type = "radio" name = "q1" value="B"> B)42 </label>
+      <label><input type = "radio" name = "q1" value="C"> C)47 </label>
+      <label><input type = "radio" name = "q1" value="D"> D)56 </label>
+    </div>
+    <div class = "question">
+      <p>3. How many tribes are there in Kenya?</p>
+      <label><input type = "radio" name = "q1" value="A"> A)45 </label>
+      <label><input type = "radio" name = "q1" value="B"> B)42 </label>
+      <label><input type = "radio" name = "q1" value="C"> C)47 </label>
+      <label><input type = "radio" name = "q1" value="D"> D)56 </label>
+    </div>
+    <div class = "question">
+      <p>4. What is the main tourist attraction in Kenya?</p>
+      <label><input type = "radio" name = "q1" value="A"> A)Wildlife </label>
+      <label><input type = "radio" name = "q1" value="B"> B)Sandy Beaches</label>
+      <label><input type = "radio" name = "q1" value="C"> C)Weather </label>
+      <label><input type = "radio" name = "q1" value="D"> D)Culture </label>
+    </div>
+    <div class = "question">
+      <p>5. Who is the head of the nation?</p>
+      <label><input type = "radio" name = "q1" value="A"> A)police </label>
+      <label><input type = "radio" name = "q1" value="B"> B)the people</label>
+      <label><input type = "radio" name = "q1" value="C"> C)president </label>
+      <label><input type = "radio" name = "q1" value="D"> D)parliament </label>
+    </div>
+    <button type="button" onclick="calculate" score()>submit</button>
+  </form>
+  <div id = "result" class="result"></div>
+</div>
+<p id="description">
+  Thank you for taking your time to help us in this study
+</p>
+<script src="quiz.js"></script>
+</body>
+</html>
