@@ -6,15 +6,25 @@ body {
     align-items: flex-start;
     height: 100vh;
     margin: 0;
-    color: #333; /* Default text color */
-    text-align: center;
-    padding: 20px; /* Add padding to ensure content is not cut off */
-}
-
-.quiz-container {
+    color: #333; 
+    text-align: justify;
     padding: 20px;
-    width: 100%;
+    background-image: url(pic.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no repeat;
+}
+.background{
+    filter: blur(22px);
+}
+    
+.container {
+    padding: 20px;
+    width: 650px;
+    margin-top: 80px;
     max-width: 600px;
+    background-color: #c06c84;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -26,26 +36,33 @@ h1 {
 .question {
     margin-bottom: 20px;
     text-align: left;
+    font-weight: bold;
 }
 
 .question p {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 10px;
-    color: white; /* Text color for better visibility */
+    color: white;
 }
 
 label {
     display: block;
     margin-bottom: 10px;
     font-size: 16px;
-    color: white; /* Text color for better visibility */
+    color: white; 
 }
 
 input[type="radio"] {
     margin-right: 10px;
 }
-
-button {
+.options{
+    margin-bottom: 20px;
+}
+.options{
+    display: block;
+    margin-bottom: 10px;
+}
+.button {
     display: block;
     width: 100%;
     padding: 15px;
@@ -56,10 +73,11 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+    margin-right: 10px;
     transition: background 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background: #218838;
 }
 
@@ -68,5 +86,8 @@ button:hover {
     font-size: 18px;
     text-align: center;
     font-weight: bold;
-    color: white; /* Text color for better visibility */
+    color: white; 
+}
+.hide{
+    display: none;
 }
